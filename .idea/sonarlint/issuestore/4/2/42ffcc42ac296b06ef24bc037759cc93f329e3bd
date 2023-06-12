@@ -1,0 +1,21 @@
+
+u
+java:S1450"XRemove the "amkaField" field and declare it as a local variable in the relevant methods.(ŞãŸß8Êª‚÷Š1
+x
+java:S1450"[Remove the "cognomeField" field and declare it as a local variable in the relevant methods.(Şş©8Ëª‚÷Š1
+v
+java:S1450"YRemove the "emailField" field and declare it as a local variable in the relevant methods.(·Ÿ¯ó8Ëª‚÷Š1
+
+java:S1450"]Remove the "indirizzoField" field and declare it as a local variable in the relevant methods.(ğ¨»¢ûÿÿÿÿ8Ëª‚÷Š1
+t
+java:S1450"XRemove the "nomeField" field and declare it as a local variable in the relevant methods.(…¤£(8Ëª‚÷Š1
+w
+java:S1450"ZRemove the "numberField" field and declare it as a local variable in the relevant methods.(Ş¡”Æ8Ìª‚÷Š1
+c
+java:S3252""AUse static access with "javax.swing.SwingConstants" for "CENTER".(˜„—ıÿÿÿÿ8Öª‚÷Š1
+c
+java:S3252?"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ÀğöĞÿÿÿÿÿ8ßª‚÷Š1
+d
+java:S3252"AUse static access with "javax.swing.SwingConstants" for "CENTER".(ßòĞÒüÿÿÿÿ8êÛ•÷Š1
+[
+java:S1117—"=Rename "amkaField" which hides the field declared at line 16.(áÖµ“8ëÛ•÷Š1
