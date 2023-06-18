@@ -66,7 +66,7 @@ public class MongoDBManager {
             paziente.setNome(doc.getString("nome"));
             paziente.setCognome(doc.getString("cognome"));
             paziente.setAmka(doc.getString("amka"));
-            paziente.setNumber(doc.getString("number"));
+            paziente.setNumber(doc.getString("numero"));
             paziente.setEmail(doc.getString("email"));
             paziente.setIndirizzo(doc.getString("indirizzo"));
             // Aggiungi altri campi del paziente qui
@@ -74,6 +74,21 @@ public class MongoDBManager {
         } else {
             return null;
         }
+    }
+
+    public boolean updatePazienteFieldByAmka(String amka, String campo, String nuovoValore) {
+        try {
+            Document updateDoc = new Document("$set", new Document(campo, nuovoValore));
+            collection.updateOne(eq("amka", amka), updateDoc);
+            return true; // Aggiornamento avvenuto con successo
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false; // Errore durante l'aggiornamento
+        }
+    }
+
+    public void deletePazienteByAmka(String amka) {
+        collection.deleteOne(eq("amka", amka));
     }
 
     public List<Paziente> getAllPazienti() {

@@ -16,14 +16,8 @@ public class App {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JFrame frame = new JFrame("Rubrica");
                 RubricaGUI rubricaGUI = new RubricaGUI(manager);
-                frame.getContentPane().add(rubricaGUI.getPanel());
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.pack();
-                frame.setVisible(true);
-
-                frame.addWindowListener(new WindowAdapter() {
+                rubricaGUI.getFrame().addWindowListener(new WindowAdapter() {
                     @Override
                     public void windowClosed(WindowEvent e) {
                         manager.close();
